@@ -6,7 +6,8 @@ https://docs.github.com/en/actions/reference/encrypted-secrets
 | Repo secrets (common for all environments)| Y | Y | Y |
 | Environment secret (loaded when a job starts)| Y | Y | N |
 
- - Secrets are used for both - configs and actuall secrets
+ - Secrets are used for both - configs and actual secrets
+ - Super inconvenient that you can't see/update a value
  - Large secrets (>64k) are stored as encrypted files in the repo + passphrase in a secret
  - Azure specific secrets should be stored in KeyVaults and retrieved into a workflow (if needed) with the [Azure Key Vault Action](https://github.com/marketplace/actions/azure-key-vault-get-secrets)
  
